@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="650.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="650.0">
+         <children>
+            <Button layoutX="151.0" layoutY="298.0" mnemonicParsing="false" onAction="#addFood" prefWidth="164.0" text="Edit Pantry">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="261.0" layoutY="357.0" mnemonicParsing="false" onAction="#quickMenu" text="Quick Search">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="339.0" layoutY="298.0" mnemonicParsing="false" onAction="#searchMenu" prefHeight="25.0" prefWidth="164.0" text="Search Pantry">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <ImageView fx:id="title" fitHeight="168.0" fitWidth="288.0" layoutX="181.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pc7r6nboi.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

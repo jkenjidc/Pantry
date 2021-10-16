@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.quickController">
+   <children>
+      <Separator layoutY="340.0" prefHeight="17.0" prefWidth="650.0" />
+      <Button fx:id="btngro" layoutX="40.0" layoutY="130.0" mnemonicParsing="false" onAction="#clickG" text="Search by food groups" />
+      <Button fx:id="btncal" layoutX="22.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="Californian FB Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="39.0" layoutY="420.0" mnemonicParsing="false" onAction="#clickC" text="Search by calorie count" />
+      <ComboBox fx:id="gcombo" layoutX="250.0" layoutY="194.0" prefWidth="150.0" />
+      <ComboBox fx:id="ccombo" layoutX="250.0" layoutY="524.0" prefWidth="150.0" />
+      <Button fx:id="searchG" layoutX="566.0" layoutY="295.0" mnemonicParsing="false" onAction="#tableView" text="Search" />
+      <Button fx:id="searchC" layoutX="566.0" layoutY="625.0" mnemonicParsing="false" onAction="#tableView" text="Search" />
+      <Label fx:id="command" layoutX="467.0" layoutY="122.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.editController">
+   <children>
+      <Button layoutX="34.0" layoutY="31.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <Button layoutX="501.0" layoutY="410.0" mnemonicParsing="false" onAction="#addFoodNow" text="add" />
+      <TextField fx:id="deleted" layoutX="237.0" layoutY="569.0" />
+      <Label layoutX="211.0" layoutY="537.0" text="Enter food id of item to be deleted" />
+      <Button layoutX="287.0" layoutY="609.0" mnemonicParsing="false" onAction="#deleteFoodNow" text="delete" />
+      <Separator layoutX="-14.0" layoutY="450.0" prefHeight="9.0" prefWidth="650.0" />
+      <GridPane layoutX="74.0" layoutY="79.0" prefHeight="303.0" prefWidth="502.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="243.0" text="Food Name*" textAlignment="CENTER" />
+            <TextField fx:id="tfname" GridPane.columnIndex="1" />
+            <Label text="Calories*" GridPane.rowIndex="1" />
+            <TextField fx:id="tcal" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tser" prefHeight="25.0" prefWidth="224.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Serving Size*" GridPane.rowIndex="2" />
+            <Label layoutX="10.0" layoutY="32.0" prefHeight="17.0" prefWidth="243.0" text="Food Group" textAlignment="CENTER" GridPane.rowIndex="3" />
+            <ComboBox fx:id="groups" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label layoutX="10.0" layoutY="32.0" prefHeight="17.0" prefWidth="243.0" text="Food Brand" textAlignment="CENTER" GridPane.rowIndex="4" />
+            <ComboBox fx:id="brands" layoutX="261.0" layoutY="211.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Label layoutX="192.0" layoutY="44.0" text="Items with &quot; * &quot; can't be blank">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="errlbl" layoutX="229.0" layoutY="394.0" text="INVALID ENTRY" textFill="#dd0505">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="succlbl" layoutX="219.0" layoutY="394.0" text="FOOD WAS ADDED" textFill="#28db07">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="idlbl" layoutX="237.0" layoutY="647.0" text="ID NOT FOUND" textFill="#e01414">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="succdel" layoutX="210.0" layoutY="647.0" text="FOOD WAS DELETED" textFill="#28db07">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
